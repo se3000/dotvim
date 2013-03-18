@@ -1,151 +1,115 @@
-" ----------------------------------------
-" Bindings
-" ----------------------------------------
-" Set leader to ,
-" Note: This line MUST come before any <leader> mappings
-let mapleader=","
+" Keybindings
+" -----------
 
-" Fixes common typos
-command! W w
-command! Q q
-map <F1> <Esc>
-imap <F1> <Esc>
-" Crazy flying pinky
-cnoremap w' w<CR>
+let mapleader = ","
 
-" Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
-" make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
-nmap Q @@
+" have W write as well for shift being held too long
+command W w
 
-" Removes doc lookup binding because it's easy to fat finger and never useful.
-nmap K k
-vmap K k
+"set pastetoggle keybinding
+set pastetoggle=<F2>
 
-" Make line completion easier.
-imap <C-l> <C-x><C-l>
+" Make Y consistent with D and C
+map Y           y$
 
-" Easier Scrolling (think j/k with left hand)
-" All variations are mapped for now until I get used to one
-" C/M/D + d (page up)
-" C/M/D + f (page down)
-nmap <C-d> <C-b>
-if has("gui_macvim")
-  nmap <D-f> <C-f>
-  nmap <D-d> <C-b>
-else
-  nmap <M-f> <C-f>
-  nmap <M-d> <C-b>
-endif
+" Split screen
+map <leader>v   :vsp<CR>
 
-" Overrides neocomplcache with regular keyword completion
-inoremap <expr><C-k>  "\<C-x><C-n>"
+" Move between screens
+map <leader>w   ^Ww
+map <leader>=   ^W=
+map <leader>j   ^Wj
+map <leader>k   ^Wk
 
-" Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
-" double percentage sign in command mode is expanded
-" to directory of current file - http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
+" Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
+map <D-<>       :tabedit ~/.vimrc<CR>
 
-" Yank entire buffer with gy
-nmap gy :%y+<cr>
+" Reload .vimrc
+map <leader>rv  :source ~/.vimrc<CR>
 
-" Make Y behave like other capital commands.
-" Hat-tip http://vimbits.com/bits/11
-nnoremap Y y$
+" Undo/redo - Doesn't MacVim already have this?
+map <D-z>       :earlier 1<CR>
+map <D-Z>       :later 1<CR>
 
-" Just to beginning and end of lines easier. From http://vimbits.com/bits/16
-noremap H ^
-noremap L $
+" Auto-indent whole file
+nmap <leader>=  gg=G``
+map <silent> <F7> gg=G`` :delmarks z<CR>:echo "Reformatted."<CR>
 
-" Clear search
-map <silent><Leader>/ :nohls<CR>
+" Jump to a new line in insert mode
+imap <D-CR>     <Esc>o
 
-" Highlight search word under cursor without jumping to next
-nnoremap <leader>h *<C-O>
+" Fast scrolling
+nnoremap <C-e>  3<C-e>
+nnoremap <C-y>  3<C-y>
 
-" ---------------
-" Leader Commands
-" ---------------
+" File tree browser
+map \           :NERDTreeToggle<CR>
 
-" Toggle spelling mode with ,s
-nmap <silent> <leader>s :set spell!<CR>
-" Edit vimrc with ,v
-nmap <silent> <leader>v :e ~/.vim/vimrc<CR>
-" Quickly switch to last buffer
-nnoremap <leader>, :e#<CR>
+" File tree browser showing current file - pipe (shift-backslash)
+map \|          :NERDTreeFind<CR>
 
-" Window Movement
-" Here's a visual guide for moving between window splits.
-"   4 Window Splits
-"   --------
-"   g1 | g2
-"   ---|----
-"   g3 | g4
-"   -------
-"
-"   6 Window Splits
-"   -------------
-"   g1 | gt | g2
-"   ---|----|----
-"   g3 | gb | g4
-"   -------------
-nmap <silent> gh :wincmd h<CR>
-nmap <silent> gj :wincmd j<CR>
-nmap <silent> gk :wincmd k<CR>
-nmap <silent> gl :wincmd l<CR>
-" Upper left window
-nmap <silent> g1 :wincmd t<CR>
-" Upper right window
-nmap <silent> g2 :wincmd b<Bar>:wincmd k<CR>
-" Lower left window
-nmap <silent> g3 :wincmd t<Bar>:wincmd j<CR>
-" Lower right window
-nmap <silent> g4 :wincmd b<CR>
+" Previous/next quickfix file listings (e.g. search results)
+map <M-D-Down>  :cn<CR>
+map <M-D-Up>    :cp<CR>
 
-" Top Middle
-nmap <silent> gt g2<Bar>:wincmd h<CR>
-" Bottom Middle
-nmap <silent> gb g3<Bar>:wincmd l<CR>
+" Previous/next buffers
+map <M-D-Left>  :bp<CR>
+map <M-D-Right> :bn<CR>
 
-" Previous Window
-nmap <silent> gp :wincmd p<CR>
-" Equal Size Windows
-nmap <silent> g= :wincmd =<CR>
-" Swap Windows
-nmap <silent> gx :wincmd x<CR>
+"indent/unindent visual mode selection with tab/shift+tab
+vmap <tab> >gv
+vmap <s-tab> <gv
 
-" Split window vertically or horizontally *and* switch to the new split!
-nmap <silent> <leader>hs :split<Bar>:wincmd j<CR>
-nmap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
+" FuzzyFinder and switchback commands
+map <leader>e   :e#<CR>
+map <leader>b   :FufBuffer<CR>
+map <leader><C-N> :FufFile **/<CR>
+map <D-e> :FufBuffer<CR>
+map <leader>n :FufFile **/<CR>
+map <D-N> :FufFile **/<CR>
 
-" Close the current window
-nmap <silent> <leader>sc :close<CR>
+" refresh the FuzzyFinder cache
+map <leader>rf :FufRenewCache<CR>
 
-" -----------------------
-" Escape / Write Bindings
-" -----------------------
+" Ctrl P
+map <D-N>       :CtrlP<CR>
 
-" Let's make escape better, together.
-inoremap jk <Esc>
-inoremap JK <Esc>
-inoremap Jk <Esc>
-inoremap jK <Esc>
+" ctags with rails load path
+map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
+map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
-" -------------------------------------
-" The following commands are from Janus
-" http://git.io/_GhulA
-" -------------------------------------
+" Git blame
+map <leader>g   :Gblame<CR>
 
-" Underline the current line with '='
-nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
+" Comment/uncomment lines
+map <leader>/   <plug>NERDCommenterToggle
 
-" Format the entire file
-nmap <leader>fef ggVG=
+" In command-line mode, <C-A> should go to the front of the line, as in bash.
+cmap <C-A> <C-B>
 
-" Wrap the current line
-nmap <leader>fl Vgq
+" Copy current file path to system pasteboard
+map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
+map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
+" Disable middle mouse button, F1
+map <MiddleMouse>   <Nop>
+imap <MiddleMouse>  <Nop>
+map <F1>            <Nop>
+imap <F1>           <Nop>
+
+" Easy access to the shell
+map <Leader><Leader> :!
+
+" AckGrep current word
+map <leader>a :call AckGrep()<CR>
+" AckVisual current selection
+vmap <leader>a :call AckVisual()<CR>
+
+" Recalculate diff when it gets messed up.
+nmap du :diffupdate<CR>
+
+" Gundo.vim
+map <leader>u :GundoToggle<CR>
 " Format a json file with Python's built in json.tool.
 " from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
