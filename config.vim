@@ -69,6 +69,7 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
+set guifont=Menlo:h16
 
 " ---------------
 " Searching
