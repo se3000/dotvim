@@ -5,8 +5,14 @@
 " ---------------
 " Color
 " ---------------
-set background=dark
+" Turn on Solarized 256 colors if the terminal supports it.
+" (Why Solarized doesn't do this properly on its own is unknown.)
+if &t_Co == 256
+  let g:solarized_termcolors=256
+endif
+
 colorscheme Tomorrow-Night
+set background=dark
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
