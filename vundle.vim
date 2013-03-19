@@ -56,7 +56,9 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
-Bundle 'Valloric/YouCompleteMe'
+if version >= 703 && has('patch584')
+  Bundle 'Valloric/YouCompleteMe'
+end
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
