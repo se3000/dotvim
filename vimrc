@@ -22,3 +22,7 @@ source ~/.vim/plugin_config.vim
 source ~/.vim/functions.vim
 " Auto commands.
 source ~/.vim/autocmds.vim
+" Options
+source ~/.vim/options.vim
+" Behaviors for file types and languages
+source ~/.vim/languages.vim
