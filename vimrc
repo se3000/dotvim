@@ -26,3 +26,7 @@ source ~/.vim/autocmds.vim
 source ~/.vim/options.vim
 " Behaviors for file types and languages
 source ~/.vim/languages.vim
+" Options file to modify the aesthetics of the top tab bar
+source ~/.vim/tabline.vim
+
+source ~/.vim/fugitive.vim
