@@ -20,6 +20,7 @@ Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/FuzzyFinder'
 " UI Additions
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
