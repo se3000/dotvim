@@ -55,6 +55,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'tpope/vim-endwise'
 if version >= 703 && has('patch584')
   Bundle 'Valloric/YouCompleteMe'
 end
