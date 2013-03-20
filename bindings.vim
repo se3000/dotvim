@@ -114,7 +114,3 @@ map <leader>u :GundoToggle<CR>
 " Format a json file with Python's built in json.tool.
 " from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
-
-" Press Space to turn off highlighting and clear any message already
-" displayed.
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
