@@ -21,6 +21,9 @@ Bundle 'ZoomWin'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/FuzzyFinder'
+Bundle 'vim-scripts/EditPlus'
+Bundle 'vim-scripts/EnhancedJumps'
+Bundle 'tpope/vim-unimpaired'
 " UI Additions
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
@@ -48,6 +51,7 @@ Bundle 'skalnik/vim-vroom'
 Bundle 'HelpClose'
 Bundle 'mattn/gist-vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-abolish'
 " Automatic Helpers
 Bundle 'IndexedSearch'
 Bundle 'xolox/vim-session'
@@ -56,12 +60,15 @@ Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'tpope/vim-endwise'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-repeat'
 if version >= 703 && has('patch584')
   Bundle 'Valloric/YouCompleteMe'
 end
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
