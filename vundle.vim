@@ -24,6 +24,7 @@ Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/EditPlus'
 Bundle 'vim-scripts/EnhancedJumps'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/file-line'
 " UI Additions
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
