@@ -6,6 +6,9 @@ let mapleader = ","
 " have W write as well for shift being held too long
 command W w
 
+" Shortcut to display compiled coffeescript
+command CC CoffeeCompile vert
+
 "set pastetoggle keybinding
 set pastetoggle=<F2>
 
