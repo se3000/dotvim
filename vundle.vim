@@ -77,6 +77,7 @@ Bundle 'tpope/vim-rake'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leshill/vim-json'
+Bundle 'briancollins/vim-jst'
 "   HTML
 Bundle 'nono/vim-handlebars'
 Bundle 'othree/html5.vim'
