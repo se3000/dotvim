@@ -95,6 +95,9 @@ nmap <silent> <leader>wo :ZoomWin<CR>
 " Ensure Ctrl-P isn't bound by default
 let g:ctrlp_map = ''
 
+" Allow same file to be opened in multiple tabs
+let g:ctrlp_switch_buffer=0
+
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
 
