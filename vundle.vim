@@ -63,9 +63,9 @@ Bundle 'Valloric/MatchTagAlways'
 Bundle 'tpope/vim-endwise'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'tpope/vim-repeat'
-if version >= 703 && has('patch584')
-  Bundle 'Valloric/YouCompleteMe'
-end
+"if version >= 703 && has('patch584')
+  "Bundle 'Valloric/YouCompleteMe'
+"end
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
