@@ -9,19 +9,22 @@ function! StripTrailingWhitespace()
 endfunction
 
 " C family
-autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp call StripTrailingWhitespace()
+autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp silent! :StripTrailingWhiteSpace
 
 " Highlight objective C files
 autocmd BufNewFile,BufRead *.h,*.m,*.mm set filetype=objc
 
 " Ruby, Rails
-autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.less,*.html,*.xml,*.erb,*.haml,*.feature call StripTrailingWhitespace()
+autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.less,*.html,*.xml,*.erb,*.haml,*.feature silent! :StripTrailingWhiteSpace
 
 " Java, PHP
-autocmd BufWritePre *.java,*.php,*.feature call StripTrailingWhitespace()
+autocmd BufWritePre *.java,*.php,*.feature silent! :StripTrailingWhiteSpace
 
 " Coffeescript
-autocmd BufWritePre *.coffee call StripTrailingWhitespace()
+autocmd BufWritePre *.coffee silent! :StripTrailingWhiteSpace
+
+" Python
+autocmd BufWritePre *.py silent! :StripTrailingWhiteSpace
 
 " Highlight Ruby files
 au BufRead,BufNewFile *.thor set filetype=ruby
@@ -38,7 +41,7 @@ autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 
 " Highlight GLSL files
 au BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
-autocmd BufWritePre *.frag,*.vert,*.fp,*.vp,*.glsl call StripTrailingWhitespace()
+autocmd BufWritePre *.frag,*.vert,*.fp,*.vp,*.glsl silent! :StripTrailingWhiteSpace
 
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255

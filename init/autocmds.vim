@@ -16,9 +16,6 @@ if has("autocmd")
         \   exe "normal! g`\"" |
         \ endif
 
-  " Fix trailing whitespace in my most used programming langauges
-  autocmd BufWritePre *.py,*.coffee,*.rb silent! :StripTrailingWhiteSpace
-
   " Autowrite buffers when focus is lost"
   autocmd BufLeave,FocusLost * silent! wall
 endif
