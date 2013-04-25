@@ -27,8 +27,6 @@ endif
 " ---------------
 " NERDTree
 " ---------------
-nnoremap <leader>nn :NERDTreeToggle<CR>
-nnoremap <leader>nf :NERDTreeFind<CR>
 let g:NERDTreeShowBookmarks=0
 let g:NERDTreeChDirMode=2 " Change the NERDTree directory to the root node
 let g:NERDTreeMinimalUI=1
@@ -70,12 +68,6 @@ let g:ctrlp_switch_buffer=0
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
 
-" Leader Commands
-nnoremap <leader>t :CtrlPRoot<CR>
-nnoremap <leader>u :CtrlPCurFile<CR>
-nnoremap <leader>m :CtrlPMRUFiles<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-
 " ---------------
 " Powerline
 " ---------------
@@ -92,12 +84,6 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 " ---------------
 " Make cssAttrs (center, block, etc.) the same color as units
 hi! link cssAttr Constant
-
-" ---------------
-" Ag.vim
-" ---------------
-nmap <silent> <leader>as :AgFromSearch<CR>
-nmap <leader>ag :Ag<space>
 
 " ---------------
 " surround.vim
@@ -147,13 +133,6 @@ let g:signify_mapping_next_hunk="<leader>sn"
 let g:signify_mapping_prev_hunk="<leader>sp"
 let g:signify_mapping_toggle_highlight="<nop>"
 let g:signify_mapping_toggle="<nop>"
-
-" ---------------
-" Vundle
-" ---------------
-nmap <Leader>bi :BundleInstall<CR>
-nmap <Leader>bu :BundleInstall!<CR> " Because this also updates
-nmap <Leader>bc :BundleClean<CR>
 
 " ---------
 " Gundo
