@@ -64,7 +64,6 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 " FuzzyFinder and switchback commands
-map <leader>e   :e#<CR>
 map <leader>b   :FufBuffer<CR>
 map <D-e> :FufBuffer<CR>
 
@@ -72,7 +71,9 @@ map <D-e> :FufBuffer<CR>
 map <leader>rf :FufRenewCache<CR>
 
 " Ctrl P
+map <leader>e   :CtrlP<CR>
 map <D-N>       :CtrlP<CR>
+map <C-p>       :CtrlP<CR>
 
 " ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
