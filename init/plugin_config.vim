@@ -154,3 +154,14 @@ let g:signify_mapping_toggle="<nop>"
 nmap <Leader>bi :BundleInstall<CR>
 nmap <Leader>bu :BundleInstall!<CR> " Because this also updates
 nmap <Leader>bc :BundleClean<CR>
+
+" ---------
+" Gundo
+" ---------
+let g:gundo_close_on_revert = 1
+
+" ---------
+" vim-ruby
+" ---------
+" Turn on syntax highlighting for ruby operators (==, ||, &&, etc)
+let ruby_operators=1
