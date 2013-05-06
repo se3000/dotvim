@@ -4,7 +4,7 @@
 
 ## Installation
 
-1. `git clone http://github.com/mutewinter/dot_vim.git ~/.vim`
+1. `git clone http://github.com/data-axle/dot_vim.git ~/.vim`
 2. `cd ~/.vim`
 3. `rake vim:link` to make the .vimrc symbolic link.
 4. Install [Vundle](https://github.com/gmarik/vundle) with `git clone
