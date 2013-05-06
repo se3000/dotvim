@@ -72,6 +72,7 @@ map <leader>rf :FufRenewCache<CR>
 
 " Ctrl P
 map <leader>e   :CtrlP<CR>
+map <leader>f   :CtrlP<CR>
 map <D-N>       :CtrlP<CR>
 map <C-p>       :CtrlP<CR>
 
