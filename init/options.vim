@@ -10,6 +10,7 @@ set wildignore+=public/uploads  " ...Also uploads.
 set wildignore+=public/images   " ...Also images.
 set wildignore+=compiled        " ...Also compiled.
 set wildignore+=node_modules    " ...Also node_modules.
+set wildignore+=components      " ...Also components.
 " set wildignore+=vendor/**          " ...Also vendor.
 
 set showmatch                   " Show matching brackets
