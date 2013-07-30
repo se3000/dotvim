@@ -15,6 +15,8 @@ Bundle 'gmarik/vundle'
 " Plugin Bundles
 " ---------------
 
+Bundle 'xolox/vim-misc'
+
 " Navigation
 Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
@@ -30,7 +32,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'mhinz/vim-signify'
+"Bundle 'mhinz/vim-signify'
 " Commands
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
