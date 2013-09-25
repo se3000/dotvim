@@ -82,6 +82,7 @@ Bundle 'nono/vim-handlebars'
 Bundle 'othree/html5.vim'
 Bundle 'indenthtml.vim'
 "   Other Languages
+Bundle 'derekwyatt/vim-scala'
 Bundle 'msanders/cocoa.vim'
 Bundle 'timcharper/textile.vim'
 Bundle 'acustodioo/vim-tmux'
