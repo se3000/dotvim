@@ -40,6 +40,7 @@ map <silent> <F7> gg=G`` :delmarks z<CR>:echo "Reformatted."<CR>
 
 " Jump to a new line in insert mode
 imap <D-CR>     <Esc>o
+imap <S-CR>     <Esc>o
 
 " Fast scrolling
 nnoremap <C-e>  3<C-e>
