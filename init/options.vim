@@ -12,6 +12,7 @@ set wildignore+=public/static   " ...Also node_modules.
 set wildignore+=compiled        " ...Also compiled.
 set wildignore+=node_modules    " ...Also node_modules.
 set wildignore+=components      " ...Also components.
+set wildignore+=.bundle         " ...Also .bundle.
 " set wildignore+=vendor/**          " ...Also vendor.
 
 set showmatch                   " Show matching brackets
