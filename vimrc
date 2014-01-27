@@ -1,3 +1,7 @@
+syntax on
+filetype on
+au BufNewFile,BufRead *.worker set filetype=ruby
+
 " All of the plugins are installed with Vundle from this file.
 source ~/.vim/vundle.vim
 
