@@ -25,7 +25,7 @@ Bundle 'kien/ctrlp.vim'
 "Bundle 'wincent/Command-T'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/EditPlus'
-Bundle 'vim-scripts/EnhancedJumps'
+"Bundle 'vim-scripts/EnhancedJumps'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/file-line'
 " UI Additions
