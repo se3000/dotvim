@@ -9,6 +9,9 @@ command W w
 " Shortcut to display compiled coffeescript
 command CC CoffeeCompile vert
 
+" Shortcut to check syntax with Syntastic
+command SC SyntasticCheck
+
 "set pastetoggle keybinding
 set pastetoggle=<F2>
 

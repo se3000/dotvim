@@ -26,16 +26,6 @@ autocmd BufWritePre *.coffee silent! :StripTrailingWhiteSpace
 " Python
 autocmd BufWritePre *.py silent! :StripTrailingWhiteSpace
 
-" Highlight Ruby files
-au BufRead,BufNewFile *.thor set filetype=ruby
-au BufRead,BufNewFile *.god set filetype=ruby
-au BufRead,BufNewFile Gemfile* set filetype=ruby
-au BufRead,BufNewFile Vagrantfile set filetype=ruby
-au BufRead,BufNewFile soloistrc set filetype=ruby
-
-" Highlight JSON files as javascript
-autocmd BufRead,BufNewFile *.json set filetype=javascript
-
 " Highlight Jasmine fixture files as HTML
 autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 
