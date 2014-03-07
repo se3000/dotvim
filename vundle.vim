@@ -72,6 +72,7 @@ Bundle 'briancollins/vim-jst'
 Bundle 'othree/html5.vim'
 "   Other Languages
 Bundle 'derekwyatt/vim-scala'
+Bundle 'jnwhiteh/vim-golang'
 Bundle 'msanders/cocoa.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'wavded/vim-stylus'
