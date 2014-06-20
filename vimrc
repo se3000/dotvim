@@ -1,4 +1,3 @@
-syntax on
 filetype on
 au BufNewFile,BufRead *.worker set filetype=ruby
 
