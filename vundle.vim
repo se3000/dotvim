@@ -71,6 +71,7 @@ Bundle 'briancollins/vim-jst'
 "   HTML
 Bundle 'othree/html5.vim'
 "   Other Languages
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'msanders/cocoa.vim'
