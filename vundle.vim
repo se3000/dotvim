@@ -76,6 +76,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'msanders/cocoa.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'wavded/vim-stylus'
+Bundle 'itspriddle/vim-jekyll'
 " MatchIt
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'

@@ -144,3 +144,8 @@ let g:gundo_close_on_revert = 1
 " ---------
 " Turn on syntax highlighting for ruby operators (==, ||, &&, etc)
 let ruby_operators=1
+
+" ---------
+" vim-jekyll
+" ---------
+let g:jekyll_post_extension = '.md'
