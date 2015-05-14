@@ -11,7 +11,12 @@ if &t_Co == 256
   let g:solarized_termcolors=256
 endif
 
-colorscheme Tomorrow-Night
+try
+  colorscheme Tomorrow-Night
+catch
+  " deal with it
+endtry
+
 set background=dark
 
 " -----------------------------

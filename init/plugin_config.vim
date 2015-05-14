@@ -77,7 +77,12 @@ if has('win32') || has('win64')
 elseif has('gui_macvim')
   let g:Powerline_symbols = 'fancy'
 endif
-call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
+try
+  call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+catch
+  " nothing
+endtry
 
 " ---------------
 " jellybeans.vim colorscheme tweaks
