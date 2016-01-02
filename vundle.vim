@@ -51,7 +51,7 @@ Bundle 'xolox/vim-misc'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-endwise'
-Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-repeat'
 "if version >= 703 && has('patch584')
   "Bundle 'Valloric/YouCompleteMe'
