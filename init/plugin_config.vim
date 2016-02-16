@@ -154,3 +154,8 @@ let ruby_operators=1
 " vim-jekyll
 " ---------
 let g:jekyll_post_extension = '.md'
+
+" ---------
+" ag
+" ---------
+let g:ag_prg="ag --path-to-agignore=~/.agignore --vimgrep"
