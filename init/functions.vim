@@ -82,6 +82,13 @@ endfunction
 noremap <silent> <enter> :call WriteBuffer()<CR>
 
 " Find current word in command mode
+function! AgGrep()
+  let command = "ag ".expand("<cword>")
+  cexpr system(command)
+  cw
+endfunction
+
+" Find current word in command mode
 function! AckGrep()
   let command = "ack ".expand("<cword>")
   cexpr system(command)
@@ -91,6 +98,13 @@ endfunction
 function! AckVisual()
   normal gv"xy
   let command = "ack ".@x
+  cexpr system(command)
+  cw
+endfunction
+
+function! AgVisual()
+  normal gv"xy
+  let command = "ag ".@x
   cexpr system(command)
   cw
 endfunction
