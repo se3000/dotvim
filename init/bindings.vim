@@ -12,6 +12,9 @@ command CC CoffeeCompile vert
 " Shortcut to check syntax with Syntastic
 command SC SyntasticCheck
 
+" Shortcut to tabularize lines of code via colon and whitespace. i.e. key: value
+command Tabc Tabularize /: \zs
+
 "set pastetoggle keybinding
 set pastetoggle=<F2>
 
