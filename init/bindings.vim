@@ -12,8 +12,16 @@ command CC CoffeeCompile vert
 " Shortcut to check syntax with Syntastic
 command SC SyntasticCheck
 
-" Shortcut to tabularize lines of code via colon and whitespace. i.e. key: value
-command Tabc Tabularize /: \zs
+" Shortcut to tabularize lines of code via a character using the whitespace after it.
+" i.e. key: value
+"      somelongerkey: value
+" becomes key:           value
+"         somelongerkey: value
+" Usage: Tabz :
+command! -nargs=1 -range Tabc exec <line1> . ',' . <line2> . 'Tabularize /' . escape(<q-args>, '\^$.[?*~') . ' \zs'
+
+" Tabularize only against the first matching character.
+command! -nargs=1 -range TabFirst exec <line1> . ',' . <line2> . 'Tabularize /^[^' . escape(<q-args>, '\^$.[?*~') . ']*\zs' . escape(<q-args>, '\^$.[?*~')
 
 "set pastetoggle keybinding
 set pastetoggle=<F2>
