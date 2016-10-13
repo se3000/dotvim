@@ -12,6 +12,9 @@ command CC CoffeeCompile vert
 " Shortcut to check syntax with Syntastic
 command SC SyntasticCheck
 
+" Shortcut to close all other tabs and windows
+command Ont exec 'only|tabo'
+
 " Shortcut to tabularize lines of code via a character using the whitespace after it.
 " i.e. key: value
 "      somelongerkey: value
