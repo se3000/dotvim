@@ -53,6 +53,7 @@ Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-endwise'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-repeat'
+Bundle 'editorconfig/editorconfig-vim'
 "if version >= 703 && has('patch584')
   "Bundle 'Valloric/YouCompleteMe'
 "end
@@ -71,6 +72,7 @@ Bundle 'briancollins/vim-jst'
 "   HTML
 Bundle 'othree/html5.vim'
 "   Other Languages
+Bundle 'rhysd/vim-crystal'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'jnwhiteh/vim-golang'
