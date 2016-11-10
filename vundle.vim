@@ -18,14 +18,12 @@ Bundle 'gmarik/vundle'
 " Navigation
 Bundle 'ZoomWin'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'wincent/Command-T'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/file-line'
 " UI Additions
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
 Bundle 'scrooloose/nerdtree'
-Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'mhinz/vim-signify'
 " Commands
@@ -33,7 +31,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
-Bundle 'mileszs/ack.vim'
+Bundle 'junegunn/vim-easy-align'
 Bundle 'rking/ag.vim'
 Bundle 'vim-scripts/keepcase.vim'
 Bundle 'vim-scripts/Shortcut-functions-for-KeepCase-script-'
@@ -54,8 +52,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-repeat'
 Bundle 'editorconfig/editorconfig-vim'
-"if version >= 703 && has('patch584')
-  "Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 "end
 " Language Additions
 "   Ruby
@@ -83,6 +80,6 @@ Bundle 'itspriddle/vim-jekyll'
 " MatchIt
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
-" Libraries
+" Libraries required by other plugins
 Bundle 'L9'
 Bundle 'mattn/webapi-vim'

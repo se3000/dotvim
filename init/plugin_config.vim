@@ -69,28 +69,6 @@ let g:ctrlp_switch_buffer=0
 let g:ctrlp_max_height = 10
 
 " ---------------
-" Powerline
-" ---------------
-" Keep ^B from showing on Windows in Powerline
-if has('win32') || has('win64')
-  let g:Powerline_symbols = 'compatible'
-elseif has('gui_macvim')
-  let g:Powerline_symbols = 'fancy'
-endif
-
-try
-  call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
-catch
-  " nothing
-endtry
-
-" ---------------
-" jellybeans.vim colorscheme tweaks
-" ---------------
-" Make cssAttrs (center, block, etc.) the same color as units
-hi! link cssAttr Constant
-
-" ---------------
 " surround.vim
 " ---------------
 " Use # to get a variable interpolation (inside of a string)}
