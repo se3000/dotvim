@@ -15,6 +15,12 @@ command SC SyntasticCheck
 " Shortcut to close all other tabs and windows
 command Ont exec 'only|tabo'
 
+" Window navigation shortcuts
+map <c-h> <C-w><Left>
+map <c-j> <C-w><Down>
+map <c-k> <C-w><Up>
+map <c-l> <C-w><Right>
+
 " Shortcut to tabularize lines of code via a character using the whitespace after it.
 " i.e. key: value
 "      somelongerkey: value
