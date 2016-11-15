@@ -22,10 +22,10 @@ nnoremap H gT
 nnoremap L gt
 
 " CTRL HJKL Tab and Quickfix navigation shortcuts
-map <c-h> :tabnext<CR>
+map <c-h> :tabp<CR>
 map <c-j> :cn<CR>
 map <c-k> :cp<CR>
-map <c-l> :tabprevious<CR>
+map <c-l> :tabn<CR>
 
 " Shortcut to tabularize lines of code via a character using the whitespace after it.
 " i.e. key: value
@@ -114,12 +114,6 @@ else
   map <D-N>       :FZF<CR>
   map <C-p>       :FZF<CR>
 endif
-
-" Command T
-"map <leader>e   :CommandT<CR>
-"map <leader>f   :CommandT<CR>
-"map <D-N>       :CommandT<CR>
-"map <C-p>       :CommandT<CR>
 
 " ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
