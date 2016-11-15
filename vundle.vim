@@ -17,7 +17,12 @@ Bundle 'gmarik/vundle'
 
 " Navigation
 Bundle 'ZoomWin'
-Bundle 'kien/ctrlp.vim'
+if has("gui_macvim")
+  Bundle 'kien/ctrlp.vim'
+else
+  Bundle 'junegunn/fzf'
+  Bundle 'junegunn/fzf.vim'
+endif
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/file-line'

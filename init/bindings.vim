@@ -103,10 +103,17 @@ map <D-e> :FufBuffer<CR>
 map <leader>rf :FufRenewCache<CR>
 
 " Ctrl P
-map <leader>e   :CtrlP<CR>
-map <leader>f   :CtrlP<CR>
-map <D-N>       :CtrlP<CR>
-map <C-p>       :CtrlP<CR>
+if has("gui_macvim")
+  map <leader>e   :CtrlP<CR>
+  map <leader>f   :CtrlP<CR>
+  map <D-N>       :CtrlP<CR>
+  map <C-p>       :CtrlP<CR>
+else
+  map <leader>e   :FZF<CR>
+  map <leader>f   :FZF<CR>
+  map <D-N>       :FZF<CR>
+  map <C-p>       :FZF<CR>
+endif
 
 " Command T
 "map <leader>e   :CommandT<CR>
