@@ -12,7 +12,7 @@ if &t_Co == 256
 endif
 
 try
-  colorscheme Tomorrow-Night
+  colorscheme Tomorrow-Night-Eighties
 catch
   " deal with it
 endtry
