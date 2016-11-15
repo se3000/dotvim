@@ -21,11 +21,11 @@ nnoremap <C-Right> :tabnext<CR>
 nnoremap H gT
 nnoremap L gt
 
-" Window navigation shortcuts
-map <c-h> <C-w><Left>
-map <c-j> <C-w><Down>
-map <c-k> <C-w><Up>
-map <c-l> <C-w><Right>
+" CTRL HJKL Tab and Quickfix navigation shortcuts
+map <c-h> :tabnext<CR>
+map <c-j> :cn<CR>
+map <c-k> :cp<CR>
+map <c-l> :tabprevious<CR>
 
 " Shortcut to tabularize lines of code via a character using the whitespace after it.
 " i.e. key: value
@@ -84,6 +84,8 @@ map \|          :NERDTreeFind<CR>
 " Previous/next quickfix file listings (e.g. search results)
 map <M-D-Down>  :cn<CR>
 map <M-D-Up>    :cp<CR>
+map <C-Down>    :cn<CR>
+map <C-Up>      :cp<CR>
 
 " Previous/next buffers
 map <M-D-Left>  :bp<CR>
