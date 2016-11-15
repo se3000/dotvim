@@ -15,6 +15,12 @@ command SC SyntasticCheck
 " Shortcut to close all other tabs and windows
 command Ont exec 'only|tabo'
 
+" Tab navigation shortcuts
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap H gT
+nnoremap L gt
+
 " Window navigation shortcuts
 map <c-h> <C-w><Left>
 map <c-j> <C-w><Down>
