@@ -115,6 +115,10 @@ else
   map <C-p>       :FZF<CR>
 endif
 
+" Copy/Paste
+vnoremap <C-c> :w !pbcopy<CR><CR>
+noremap <C-v> :r !pbpaste<CR><CR>
+
 " ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
 map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
