@@ -15,18 +15,6 @@ command SC SyntasticCheck
 " Shortcut to close all other tabs and windows
 command Ont exec 'only|tabo'
 
-" Tab navigation shortcuts
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
-nnoremap H gT
-nnoremap L gt
-
-" CTRL HJKL Tab and Quickfix navigation shortcuts
-map <c-h> :tabp<CR>
-map <c-j> :cn<CR>
-map <c-k> :cp<CR>
-map <c-l> :tabn<CR>
-
 " Shortcut to tabularize lines of code via a character using the whitespace after it.
 " i.e. key: value
 "      somelongerkey: value
@@ -81,43 +69,47 @@ map \           :NERDTreeToggle<CR>
 " File tree browser showing current file - pipe (shift-backslash)
 map \|          :NERDTreeFind<CR>
 
+" Tab navigation shortcuts
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap H gT
+nnoremap L gt
+map <c-h> :tabp<CR>
+map <c-l> :tabn<CR>
+
 " Previous/next quickfix file listings (e.g. search results)
 map <M-D-Down>  :cn<CR>
 map <M-D-Up>    :cp<CR>
 map <C-Down>    :cn<CR>
 map <C-Up>      :cp<CR>
+map <c-j>       :cn<CR>
+map <c-k>       :cp<CR>
 
-" Previous/next buffers
+" Buffers
 map <M-D-Left>  :bp<CR>
 map <M-D-Right> :bn<CR>
+map <leader>b   :FufBuffer<CR>
 
 "indent/unindent visual mode selection with tab/shift+tab
 vmap <tab> >gv
 vmap <s-tab> <gv
-
-" FuzzyFinder and switchback commands
-map <leader>b   :FufBuffer<CR>
-map <D-e> :FufBuffer<CR>
 
 " refresh the FuzzyFinder cache
 map <leader>rf :FufRenewCache<CR>
 
 " Ctrl P
 if has("gui_macvim")
-  map <leader>e   :CtrlP<CR>
   map <leader>f   :CtrlP<CR>
   map <D-N>       :CtrlP<CR>
   map <C-p>       :CtrlP<CR>
 else
-  map <leader>e   :FZF<CR>
   map <leader>f   :FZF<CR>
   map <D-N>       :FZF<CR>
   map <C-p>       :FZF<CR>
 endif
 
-" Copy/Paste
+" Copy. Paste is going to be manually done with set paste, CMD v
 vnoremap <C-c> :w !pbcopy<CR><CR>
-noremap <C-v> :r !pbpaste<CR><CR>
 
 " ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
