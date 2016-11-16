@@ -29,6 +29,7 @@ Bundle 'vim-scripts/file-line'
 " UI Additions
 Bundle 'vim-airline/vim-airline'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-vinegar'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'mhinz/vim-signify'
 " Commands
