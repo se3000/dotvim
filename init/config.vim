@@ -52,7 +52,7 @@ if exists('+ballooneval')
   set balloondelay=100000
 endif
 " tree-view
-let g:netrw_liststyle = 3
+let g:netrw_liststyle = 1
 
 " ---------------
 " Behaviors
