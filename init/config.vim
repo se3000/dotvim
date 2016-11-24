@@ -51,6 +51,8 @@ if exists('+ballooneval')
   " 100 second delay seems to be the only way to disable the tooltips
   set balloondelay=100000
 endif
+" tree-view
+let g:netrw_liststyle = 3
 
 " ---------------
 " Behaviors
