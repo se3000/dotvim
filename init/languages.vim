@@ -29,6 +29,9 @@ autocmd BufWritePre *.py silent! :StripTrailingWhiteSpace
 " Highlight Jasmine fixture files as HTML
 autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 
+" Highlight .es6 files as javascript
+autocmd BufRead,BufNewFile *.es6 set filetype=javascript
+
 " Highlight GLSL files
 au BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
 autocmd BufWritePre *.frag,*.vert,*.fp,*.vp,*.glsl silent! :StripTrailingWhiteSpace
