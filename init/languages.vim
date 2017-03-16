@@ -36,6 +36,15 @@ autocmd BufRead,BufNewFile *.es6 set filetype=javascript
 au BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
 autocmd BufWritePre *.frag,*.vert,*.fp,*.vp,*.glsl silent! :StripTrailingWhiteSpace
 
+" Octave syntax
+autocmd BufRead,BufNewFile *.m,*.oct set filetype=octave
+
+" Refactor all this file type detection to be in a group like below
+" Octave syntax
+" augroup filetypedetect
+"   au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+"   augroup END 
+
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
