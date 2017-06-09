@@ -82,6 +82,13 @@ endfunction
 noremap <silent> <enter> :call WriteBuffer()<CR>
 
 " Find current word in command mode
+function! RgGrep()
+  let command = "rg ".expand("<cword>")
+  cexpr system(command)
+  cw
+endfunction
+
+" Find current word in command mode
 function! AgGrep()
   let command = "ag ".expand("<cword>")
   cexpr system(command)
@@ -105,6 +112,13 @@ endfunction
 function! AgVisual()
   normal gv"xy
   let command = "ag ".@x
+  cexpr system(command)
+  cw
+endfunction
+
+function! RgVisual()
+  normal gv"xy
+  let command = "rg ".@x
   cexpr system(command)
   cw
 endfunction

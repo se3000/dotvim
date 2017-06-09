@@ -143,10 +143,10 @@ imap <F1>           <Nop>
 map <Leader><Leader> :!
 
 " grep current word
-map <leader>a :call AgGrep()<CR>
+map <leader>a :call RgGrep()<CR>
 
 " Visual grep current selection
-vmap <leader>a :call AgVisual()<CR>
+vmap <leader>a :call RgVisual()<CR>
 
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>
@@ -157,3 +157,16 @@ map <leader>u :GundoToggle<CR>
 " Format a json file with Python's built in json.tool.
 " from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
+
+" https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2
+" --column: Show column number
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --ignore-case: Case insensitive search
+" --no-ignore: Do not respect .gitignore, etc...
+" --hidden: Search hidden files and folders
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
