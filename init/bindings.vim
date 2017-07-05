@@ -143,10 +143,10 @@ imap <F1>           <Nop>
 map <Leader><Leader> :!
 
 " grep current word
-map <leader>a :call RgGrep()<CR>
+map <leader>a :call AgGrep()<CR>
 
 " Visual grep current selection
-vmap <leader>a :call RgVisual()<CR>
+vmap <leader>a :call AgVisual()<CR>
 
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>
