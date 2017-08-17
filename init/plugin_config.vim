@@ -137,3 +137,9 @@ let g:jekyll_post_extension = '.md'
 " ag
 " ---------
 let g:ag_prg="ag --path-to-ignore=~/.agignore --vimgrep"
+
+" ---------
+"  Flake 8
+"  -------
+let g:flake8_show_quickfix=0
+let g:flake8_show_in_gutter=1

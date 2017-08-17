@@ -17,6 +17,9 @@ command Ont exec 'only|tabo'
 
 " Generate Ctags for rails application AND bundled gems
 command CtagsBundle exec '!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
+"command CtagsPython exec '!ctags -R --languages=python --exclude=.git --exclude=log .'
+command CtagsPython exec
+      \ "!ctags -R --fields=+l --languages=python --python-kinds=-iv $(python -c \"import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))\")"
 
 " Shortcut to tabularize lines of code via a character using the whitespace after it.
 " i.e. key: value

@@ -36,6 +36,7 @@ Bundle 'mhinz/vim-signify'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tommcdo/vim-fubitive'
 Bundle 'tpope/vim-rhubarb'
 Bundle 'godlygeek/tabular'
 Bundle 'junegunn/vim-easy-align'
@@ -74,6 +75,9 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leshill/vim-json'
 Bundle 'briancollins/vim-jst'
+"   Python
+Bundle 'nvie/vim-flake8'
+Bundle 'jmcantrell/vim-virtualenv'
 "   HTML
 Bundle 'othree/html5.vim'
 "   Other Languages

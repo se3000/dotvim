@@ -25,6 +25,7 @@ autocmd BufWritePre *.coffee silent! :StripTrailingWhiteSpace
 
 " Python
 autocmd BufWritePre *.py silent! :StripTrailingWhiteSpace
+autocmd BufWritePost *.py call Flake8()
 
 " Highlight Jasmine fixture files as HTML
 autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
