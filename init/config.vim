@@ -82,6 +82,7 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
+set binary
 
 " ---------------
 " Searching
