@@ -61,6 +61,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-repeat'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'MattesGroeger/vim-bookmarks'
 "Bundle 'Valloric/YouCompleteMe'
 "end
 " Language Additions
@@ -68,6 +69,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-haml'
+Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 "   JavaScript
