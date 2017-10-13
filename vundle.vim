@@ -92,6 +92,7 @@ Bundle 'msanders/cocoa.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'wavded/vim-stylus'
 Bundle 'itspriddle/vim-jekyll'
+Bundle 'posva/vim-vue'
 " MatchIt
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
