@@ -3,6 +3,15 @@
 " ----------------------------------------
 
 " ---------------
+" Color
+" ---------------
+" Turn on Solarized 256 colors if the terminal supports it.
+" (Why Solarized doesn't do this properly on its own is unknown.)
+if &t_Co == 256
+  let g:solarized_termcolors=256
+endif
+
+" ---------------
 " space.vim
 " ---------------
 " Disables space mappings in select mode to fix snipMate.
@@ -143,3 +152,13 @@ let g:ag_prg="ag --path-to-ignore=~/.agignore --vimgrep"
 "  -------
 let g:flake8_show_quickfix=1
 let g:flake8_show_in_gutter=1
+
+" ---------
+"  Closetag
+"  -------
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+
+" ---------
+"  Netrw
+"  -------
+let g:netrw_liststyle = 1

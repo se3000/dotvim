@@ -52,6 +52,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-abolish'
 " Automatic Helpers
+Bundle 'alvan/vim-closetag'
 Bundle 'IndexedSearch'
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-misc'

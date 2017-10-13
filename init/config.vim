@@ -2,15 +2,6 @@
 " Regular Vim Configuration (No Plugins Needed)
 " ---------------------------------------------
 
-" ---------------
-" Color
-" ---------------
-" Turn on Solarized 256 colors if the terminal supports it.
-" (Why Solarized doesn't do this properly on its own is unknown.)
-if &t_Co == 256
-  let g:solarized_termcolors=256
-endif
-
 try
   colorscheme Tomorrow-Night-Eighties
 catch
@@ -51,8 +42,6 @@ if exists('+ballooneval')
   " 100 second delay seems to be the only way to disable the tooltips
   set balloondelay=100000
 endif
-" tree-view
-let g:netrw_liststyle = 1
 
 " ---------------
 " Behaviors
