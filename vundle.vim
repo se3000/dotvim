@@ -65,18 +65,13 @@ Bundle 'MattesGroeger/vim-bookmarks'
 "Bundle 'Valloric/YouCompleteMe'
 "end
 " Language Additions
+Bundle 'sheerun/vim-polyglot'
 "   Ruby
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-haml'
-Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 "   JavaScript
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'leshill/vim-json'
-Bundle 'briancollins/vim-jst'
 "   Python
 Bundle 'nvie/vim-flake8'
 Bundle 'jmcantrell/vim-virtualenv'
@@ -84,15 +79,8 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'othree/html5.vim'
 "   Other Languages
 Bundle 'jvirtanen/vim-octave'
-Bundle 'rhysd/vim-crystal'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'jnwhiteh/vim-golang'
 Bundle 'msanders/cocoa.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'wavded/vim-stylus'
 Bundle 'itspriddle/vim-jekyll'
-Bundle 'posva/vim-vue'
 " MatchIt
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
