@@ -68,6 +68,7 @@ Bundle 'MattesGroeger/vim-bookmarks'
 "end
 " Language Additions
 Bundle 'sheerun/vim-polyglot'
+Bundle 'fatih/vim-go'
 "   Ruby
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-haml'
