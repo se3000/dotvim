@@ -162,3 +162,8 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 "  Netrw
 "  -------
 let g:netrw_liststyle = 1
+
+" ---------
+"  go-vim
+"  -------
+let g:go_fmt_command = "goimports"
