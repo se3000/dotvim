@@ -64,6 +64,7 @@ set scrolloff=3        " Keep three lines below the last line when scrolling
 " ---------------
 " Text Format
 " ---------------
+set binary
 set tabstop=2
 set backspace=2  " Delete everything with backspace
 set shiftwidth=2 " Tabs under smart indent
@@ -71,7 +72,6 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
-set binary
 
 " ---------------
 " Searching
