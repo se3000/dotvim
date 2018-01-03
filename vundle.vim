@@ -56,7 +56,7 @@ Bundle 'alvan/vim-closetag'
 Bundle 'IndexedSearch'
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-misc'
-"Bundle 'scrooloose/syntastic'
+"Bundle 'scrooloose/syntastic' "We now have ALE
 Bundle 'w0rp/ale'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-endwise'

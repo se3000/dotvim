@@ -11,3 +11,7 @@ filetype plugin indent on
 for file in split(glob('~/.vim/init/*.vim'), '\n')
   exec 'source' file
 endfor
+
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif

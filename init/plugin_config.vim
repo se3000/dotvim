@@ -167,3 +167,8 @@ let g:netrw_liststyle = 1
 "  go-vim
 "  -------
 let g:go_fmt_command = "goimports"
+
+" ---------
+"  ale
+"  -------
+let g:ale_linters = {'go': []}
