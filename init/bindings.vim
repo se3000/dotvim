@@ -181,3 +181,5 @@ cnoreabbrev Ack Ag
 :command WQ wq
 :command Wq wq
 :command Q q
+
+nmap \         <Plug>VinegarUp
