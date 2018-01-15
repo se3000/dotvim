@@ -173,3 +173,13 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 " --color: Search color options
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+
+map <c-n> :tabe<CR>
+
+cnoreabbrev Ack Ag
+
+:command WQ wq
+:command Wq wq
+:command Q q
+
+nmap \         <Plug>VinegarUp
