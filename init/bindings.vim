@@ -177,3 +177,7 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 map <c-n> :tabe<CR>
 
 cnoreabbrev Ack Ag
+
+:command WQ wq
+:command Wq wq
+:command Q q
