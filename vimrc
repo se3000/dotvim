@@ -1,11 +1,10 @@
-filetype on
-au BufNewFile,BufRead *.worker set filetype=ruby
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" All of the plugins are installed with Vundle from this file.
-source ~/.vim/vundle.vim
-
-" Automatically detect file types. (must turn on after Vundle)
-filetype plugin indent on
+source ~/.vim/plugged.vim
 
 " Source initialization files
 for file in split(glob('~/.vim/init/*.vim'), '\n')

@@ -16,6 +16,7 @@ autocmd BufNewFile,BufRead *.h,*.m,*.mm set filetype=objc
 
 " Ruby, Rails
 autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.less,*.html,*.xml,*.erb,*.haml,*.feature silent! :StripTrailingWhiteSpace
+au BufNewFile,BufRead *.worker set filetype=ruby
 
 " Java, PHP
 autocmd BufWritePre *.java,*.php,*.feature silent! :StripTrailingWhiteSpace
