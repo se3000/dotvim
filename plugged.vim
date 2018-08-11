@@ -40,6 +40,7 @@ Plug 'skalnik/vim-vroom'
 Plug 'mattn/gist-vim'
 Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-abolish'
+Plug 'terryma/vim-multiple-cursors'
 " Automatic Helpers
 Plug 'alvan/vim-closetag'
 Plug 'xolox/vim-session'
