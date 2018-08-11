@@ -172,3 +172,16 @@ let g:go_fmt_command = "goimports"
 "  ale
 "  -------
 let g:ale_linters = {'go': []}
+
+" ---------
+" dart
+" ---------
+let g:dart_format_on_save = 1
+let g:dart_style_guide = 2
+
+" ---------
+"  language servers: vim-lsc
+" --------
+let g:lsc_server_commands = {'dart': '/Users/dimroc/.pub-cache/bin/dart_language_server'}
+let g:lsc_auto_map = v:true " Use defaults
+"let g:lsc_enable_autocomplete = v:false
