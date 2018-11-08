@@ -55,7 +55,7 @@ Plug 'MattesGroeger/vim-bookmarks'
 "Plug 'Valloric/YouCompleteMe'
 "end
 " Language Additions
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go'
 "   Ruby
 Plug 'ecomba/vim-ruby-refactoring'
