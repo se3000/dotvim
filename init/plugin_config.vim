@@ -171,7 +171,7 @@ let g:go_fmt_command = "goimports"
 " ---------
 "  ale
 "  -------
-let g:ale_linters = {'go': []}
+let g:ale_linters = {'go': ['gometalinter']}
 let g:ale_javascript_eslint_suppress_missing_config = 1
 
 " ---------
