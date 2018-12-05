@@ -164,9 +164,17 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 let g:netrw_liststyle = 1
 
 " ---------
-"  go-vim
+"  vim-go
 "  -------
-let g:go_fmt_command = "goimports"
+let g:go_def_mode = 'godef'
+let g:go_fmt_command = 'goimports'
+let g:go_auto_sameids = 0
+
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 0
+let g:go_highlight_function_calls = 0
+let g:go_highlight_extra_types = 1
 
 " ---------
 "  ale

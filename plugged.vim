@@ -57,6 +57,7 @@ Plug 'MattesGroeger/vim-bookmarks'
 " Language Additions
 "Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go'
+Plug 'AndrewRadev/splitjoin.vim'
 "   Ruby
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-haml'
