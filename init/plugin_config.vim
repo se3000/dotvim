@@ -18,22 +18,6 @@ endif
 let g:space_disable_select_mode=1
 
 " ---------------
-" Syntastic
-" ---------------
-let g:syntastic_check_on_open=0
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=2
-let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby'],
-                           \ 'passive_filetypes': ['scss'] }
-
-" Platform-specific config files
-if has('win32') || has('win64')
-  let g:syntastic_jsl_conf=$HOME.'/.vim/config/windows/syntastic/jsl.conf'
-  let g:syntastic_disabled_filetypes=['sh'] " Disable .sh on Windows
-endif
-
-" ---------------
 " NERDTree
 " ---------------
 let g:NERDTreeShowBookmarks=0
