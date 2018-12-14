@@ -154,8 +154,8 @@ vmap <leader>a :call AgVisual()<CR>
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>
 
-" Gundo.vim
-map <leader>u :GundoToggle<CR>
+" Undotree
+map <leader>u :UndotreeToggle<CR>
 
 " Format a json file with Python's built in json.tool.
 " from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390

@@ -111,11 +111,6 @@ let g:signify_mapping_toggle_highlight="<nop>"
 let g:signify_mapping_toggle="<nop>"
 
 " ---------
-" Gundo
-" ---------
-let g:gundo_close_on_revert = 1
-
-" ---------
 " vim-ruby
 " ---------
 " Turn on syntax highlighting for ruby operators (==, ||, &&, etc)

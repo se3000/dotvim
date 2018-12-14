@@ -38,7 +38,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'swaroopch/vim-markdown-preview'
 Plug 'skalnik/vim-vroom'
 Plug 'mattn/gist-vim'
-Plug 'sjl/gundo.vim'
+Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
 Plug 'terryma/vim-multiple-cursors'
 " Automatic Helpers
