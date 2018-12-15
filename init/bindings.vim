@@ -45,7 +45,7 @@ map <leader>k   ^Wk
 map <D-<>       :tabedit ~/.vimrc<CR>
 
 " Reload .vimrc
-map <leader>rv  :source ~/.vimrc<CR>
+map <leader>rv  :source ~/vim/vimrc<CR>
 
 " Undo/redo - Doesn't MacVim already have this?
 map <D-z>       :earlier 1<CR>
@@ -177,3 +177,7 @@ cnoreabbrev Ack Ag
 :command Q q
 
 nmap \         <Plug>VinegarUp
+
+" Bookmarks
+map <leader>m :BookmarkAnnotate<CR>
+map <leader>M :BookmarkShowAll<CR>
