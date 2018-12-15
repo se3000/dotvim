@@ -27,9 +27,6 @@ au BufNewFile,BufRead *.worker set filetype=ruby
 " Java, PHP
 autocmd BufWritePre *.java,*.php,*.feature silent! :StripTrailingWhiteSpace
 
-" Coffeescript
-autocmd BufWritePre *.coffee silent! :StripTrailingWhiteSpace
-
 " Python
 autocmd BufWritePre *.py silent! :StripTrailingWhiteSpace
 autocmd BufWritePost *.py call Flake8()

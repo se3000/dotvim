@@ -6,12 +6,6 @@ let mapleader = ","
 " have W write as well for shift being held too long
 command W w
 
-" Shortcut to display compiled coffeescript
-command CC CoffeeCompile vert
-
-" Shortcut to check syntax with Syntastic
-command SC SyntasticCheck
-
 " Shortcut to close all other tabs and windows
 command Ont exec 'only|tabo'
 
