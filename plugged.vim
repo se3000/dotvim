@@ -64,6 +64,10 @@ Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 "   JavaScript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
 "   Python
 Plug 'nvie/vim-flake8'
 Plug 'jmcantrell/vim-virtualenv'

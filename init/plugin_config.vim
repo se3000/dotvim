@@ -158,7 +158,7 @@ let g:go_highlight_extra_types = 1
 " ---------
 "  ale
 "  -------
-let g:ale_linters = {'go': ['gometalinter']}
+let g:ale_linters = {'go': ['gometalinter'], 'javascript': ['eslint', 'standard', 'flow']}
 let g:ale_javascript_eslint_suppress_missing_config = 1
 
 " ---------
