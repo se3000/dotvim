@@ -76,6 +76,7 @@ Plug 'othree/html5.vim'
 Plug 'jvirtanen/vim-octave'
 Plug 'msanders/cocoa.vim'
 Plug 'itspriddle/vim-jekyll'
+Plug 'tomlion/vim-solidity'
 " MatchIt
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
