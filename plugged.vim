@@ -70,7 +70,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 "   Python
 Plug 'nvie/vim-flake8'
-Plug 'jmcantrell/vim-virtualenv'
 "   HTML
 Plug 'othree/html5.vim'
 "   Other Languages
