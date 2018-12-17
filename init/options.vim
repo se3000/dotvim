@@ -20,12 +20,12 @@ set hidden                      " Allow hidden, unsaved buffers
 set splitright                  " Add new windows towards the right
 set splitbelow                  " ... and bottom
 set cursorline                  " Highlight current line
-set laststatus=2                " Always show statusline
-set swapfile                    " Keep swapfiles
-set undofile                    " Maintain undo history between sessions
-set undodir=~/.vim/undodir
-set hls                         " search with highlights by default
 
+set laststatus=2                " Always show statusline
+
+set swapfile                    " Keep swapfiles
+
+set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
 " displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
