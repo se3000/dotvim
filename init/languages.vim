@@ -21,7 +21,7 @@ autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp silent! :StripTrailingWhiteSpac
 autocmd BufNewFile,BufRead *.h,*.m,*.mm set filetype=objc
 
 " Ruby, Rails
-autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.less,*.html,*.xml,*.erb,*.haml,*.feature silent! :StripTrailingWhiteSpace
+autocmd BufWritePre *.rb,*.yml,*.css,*.less,*.sass,*.scss,*.less,*.html,*.xml,*.erb,*.haml,*.feature silent! :StripTrailingWhiteSpace
 au BufNewFile,BufRead *.worker set filetype=ruby
 
 " Java, PHP
@@ -35,6 +35,9 @@ autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 
 " Highlight .es6 files as javascript
 autocmd BufRead,BufNewFile *.es6 set filetype=javascript
+
+" Javascript, Typescript, jsx variants
+autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx silent! :StripTrailingWhiteSpace
 
 " Highlight GLSL files
 au BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
