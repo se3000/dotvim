@@ -160,6 +160,19 @@ let g:go_list_type = "quickfix"
 " ---------
 "  ale
 "  -------
+let g:ale_linters = {'go': ['gometalinter']}
+
+let g:ale_go_gometalinter_options =
+      \ '--no-config --disable-all --aggregate ' .
+      \ '--enable=golint ' .
+      \ '--enable=gofmt ' .
+      \ '--enable=vet ' .
+      \ '--enable=vetshadow ' .
+      \ '--enable=errcheck ' .
+      \ '--enable=misspell ' .
+      \ '--enable=ineffassign ' .
+      \ '--exclude="error return value not checked \(defer"'
+
 let g:ale_javascript_eslint_suppress_missing_config = 1
 
 " ---------
