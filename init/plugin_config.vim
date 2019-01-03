@@ -160,7 +160,6 @@ let g:go_list_type = "quickfix"
 " ---------
 "  ale
 "  -------
-let g:ale_linters = {'go': ['gometalinter'], 'javascript': ['eslint', 'standard', 'flow']}
 let g:ale_javascript_eslint_suppress_missing_config = 1
 
 " ---------
