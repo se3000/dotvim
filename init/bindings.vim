@@ -181,3 +181,7 @@ nmap \         <Plug>VinegarUp
 " Bookmarks
 map <leader>m :BookmarkAnnotate<CR>
 map <leader>M :BookmarkShowAll<CR>
+
+" Shortcuts for ALE
+map <c-d> :ALENext<CR>
+map <c-f> :ALEPrevious<CR>
