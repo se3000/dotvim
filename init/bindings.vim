@@ -106,6 +106,7 @@ if has("gui_macvim")
 else
   map <leader>e   :FZF<CR>
   map <leader>f   :FZF<CR>
+  map <leader>h   :History<CR>
   map <D-N>       :FZF<CR>
   map <C-p>       :FZF<CR>
 endif
