@@ -46,7 +46,11 @@ Plug 'alvan/vim-closetag'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 Plug 'w0rp/ale'
-Plug 'ervandew/supertab'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install -g',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'tpope/vim-endwise'
 Plug 'vim-scripts/matchit.zip'
 Plug 'tpope/vim-repeat'

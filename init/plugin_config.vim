@@ -187,3 +187,23 @@ let g:dart_style_guide = 2
 let g:lsc_server_commands = {'dart': '/Users/dimroc/.pub-cache/bin/dart_language_server'}
 let g:lsc_auto_map = v:true " Use defaults
 "let g:lsc_enable_autocomplete = v:false
+
+" ---------
+" coc
+" ---------
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> for trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
