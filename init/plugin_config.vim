@@ -175,6 +175,11 @@ let g:ale_go_gometalinter_options =
 
 let g:ale_javascript_eslint_suppress_missing_config = 1
 
+let g:ale_pattern_options = {
+\   '.*\.json$': {'ale_enabled': 0},
+\   '.*node_modules/.*': {'ale_enabled': 0},
+\}
+
 " ---------
 " dart
 " ---------
@@ -207,3 +212,9 @@ endfunction
 
 " Use <c-space> for trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
+
+" ---------
+" prettier
+" ---------
+
+let g:prettier#config#semi = 'false'
