@@ -50,7 +50,7 @@ Plug 'w0rp/ale'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install -g',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'tpope/vim-endwise'
 Plug 'vim-scripts/matchit.zip'
 Plug 'tpope/vim-repeat'
