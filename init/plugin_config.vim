@@ -198,6 +198,8 @@ let g:lsc_auto_map = v:true " Use defaults
 " coc
 " ---------
 
+let g:coc_global_extensions = ['coc-solargraph']
+
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
@@ -214,8 +216,32 @@ endfunction
 " Use <c-space> for trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" go to definition
+map gd :call CocActionAsync('jumpDefinition')<CR>
+
 " ---------
 " prettier
 " ---------
 
 let g:prettier#config#semi = 'false'
+
+" ---------
+" LanguageClient - solargraph
+" ---------
+let g:LanguageClient_autoStart = 1
+"let g:LanguageClient_autoStop = 0
+let g:LanguageClient_serverCommands = {
+      \ 'ruby': ['tcp://localhost:7658']
+      \ }
+
+" ---------
+" UltiSnips
+" ---------
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger="<C-s>"
+"let g:UltiSnipsListSnippets="<C-s>""
+"let g:UltiSnipsJumpForwardTrigger="<C-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"

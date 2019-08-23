@@ -41,6 +41,10 @@ Plug 'mattn/gist-vim'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
 Plug 'terryma/vim-multiple-cursors'
+" Track the engine.
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
 " Automatic Helpers
 Plug 'alvan/vim-closetag'
 Plug 'xolox/vim-session'
@@ -49,8 +53,8 @@ Plug 'w0rp/ale'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install -g',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html', 'ruby'] }
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'tpope/vim-endwise'
 Plug 'vim-scripts/matchit.zip'
 Plug 'tpope/vim-repeat'
@@ -63,6 +67,10 @@ Plug 'MattesGroeger/vim-bookmarks'
 Plug 'fatih/vim-go'
 Plug 'AndrewRadev/splitjoin.vim'
 "   Ruby
+"Plug 'autozimu/LanguageClient-neovim', {
+      "\ 'branch': 'next',
+      "\ 'do': 'bash install.sh',
+      "\ }
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'

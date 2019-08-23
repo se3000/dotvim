@@ -186,3 +186,7 @@ map <leader>M :BookmarkShowAll<CR>
 " Shortcuts for ALE
 map <c-d> :ALENext<CR>
 map <c-f> :ALEPrevious<CR>
+
+" Ruby goto definition for Language Client and solargraph
+:command RubyDef :call LanguageClient#textDocument_definition()<CR>
+:command RubyRename :call LanguageClient#textDocument_rename()<CR>
