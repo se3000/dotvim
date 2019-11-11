@@ -41,10 +41,7 @@ Plug 'mattn/gist-vim'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
 Plug 'terryma/vim-multiple-cursors'
-" Track the engine.
-Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
+
 " Automatic Helpers
 Plug 'alvan/vim-closetag'
 Plug 'xolox/vim-session'

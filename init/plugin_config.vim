@@ -233,15 +233,3 @@ let g:LanguageClient_autoStart = 1
 let g:LanguageClient_serverCommands = {
       \ 'ruby': ['tcp://localhost:7658']
       \ }
-
-" ---------
-" UltiSnips
-" ---------
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-"let g:UltiSnipsExpandTrigger="<C-s>"
-"let g:UltiSnipsListSnippets="<C-s>""
-"let g:UltiSnipsJumpForwardTrigger="<C-b>"
-"let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
